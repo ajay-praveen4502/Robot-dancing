@@ -5,7 +5,7 @@
     background-color: greenyellow;
     border-radius: 160px 160px 0px 0px;
     margin-top: 90px;
-    margin-left: 190px;
+    margin-left: 190px;    
 }
 #eyes1{
     border: 1px solid white;
@@ -32,7 +32,7 @@
     background-color: greenyellow;
     border-radius: 30px;
     margin-top: 30px;
-    margin-left: 150px;
+    margin-left: 150px;   
 }
 .body{
     border: 2px solid greenyellow;
@@ -41,7 +41,7 @@
     margin-top: -130px;
     margin-left: 195px;
     background-color: greenyellow;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 30px 30px;   
 }
 .arm2{
     border: 2px solid greenyellow;
@@ -52,24 +52,99 @@
     margin-top: -120px;
     margin-left: 360px;
 }
-#legl{
+.legl{
     border: 1px solid greenyellow;
     height: 80px;
     width: 30px;
     border-radius: 30px;
-    margin-top: 110px;
-    margin-left: 20px;
-    background-color: greenyellow;
+    margin-top: 0px;
+    margin-left: 220px;
+    background-color: greenyellow;  
 }
-#legr{
+.legr{
     border: 1px solid greenyellow;
     height: 80px;
     width: 30px;
     border-radius: 30px;
     margin-top: -81.5px;
-    margin-left: 95px;
+    margin-left: 290px;
     background-color: greenyellow;
 }
+
 body{
     background-color: rgb(77, 210, 126);
+}
+
+@keyframes headmoving {
+    0%{
+        width: 150px;
+    }
+    50%{
+        width: 200px;
+        transform: skew(-20deg);
+        transform-origin: top;
+    }
+    75%{
+        width: 250;
+    }
+}
+
+@keyframes moveslefthand {
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top;
+    }
+}
+
+@keyframes movesrighthand {
+    0%{
+        transform-origin: top; 
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top;
+    }
+}
+
+@keyframes bodymoves {
+    0%{
+        border-radius: 60px;
+        transform: rotate(360deg);
+    }
+    100%{
+        border-radius: 60px;
+    }
+}
+
+@keyframes legslmoving {
+    50%{
+        transform: rotate(30deg);
+        transform-origin: top;
+    }
+}
+
+@keyframes legsrmoving {
+    50%{
+        transform: rotate(-30deg);
+        transform-origin: top;
+    }
+}
+
+.abc:hover .face{
+    animation: headmoving 1s infinite;
+}
+.abc:hover .arml{
+    animation: moveslefthand 1s infinite;
+}
+.abc:hover .body{
+    animation: bodymoves 1s infinite;
+}
+.abc:hover .arm2{
+    animation: movesrighthand 1s infinite;
+}
+.abc:hover .legl{
+    animation: legslmoving 1s infinite;
+}
+.abc:hover .legr{
+    animation: legsrmoving 1s infinite;
 }
