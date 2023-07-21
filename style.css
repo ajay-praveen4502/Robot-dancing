@@ -1,0 +1,75 @@
+.face{
+    border: 6px solid rgb(77, 210, 126);
+    height: 100px;
+    width: 150px;
+    background-color: greenyellow;
+    border-radius: 160px 160px 0px 0px;
+    margin-top: 90px;
+    margin-left: 190px;
+}
+#eyes1{
+    border: 1px solid white;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+#eyes2{
+    border: 1px solid white;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -12px;
+    margin-left: 100px;
+}
+.arml{
+    border: 2px solid greenyellow;
+    height: 100px;
+    width: 30px;
+    background-color: greenyellow;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.body{
+    border: 2px solid greenyellow;
+    height: 140px;
+    width: 150px;
+    margin-top: -130px;
+    margin-left: 195px;
+    background-color: greenyellow;
+    border-radius: 0px 0px 30px 30px;
+}
+.arm2{
+    border: 2px solid greenyellow;
+    height: 100px;
+    width: 30px;
+    background-color: greenyellow;
+    border-radius: 30px;
+    margin-top: -120px;
+    margin-left: 360px;
+}
+#legl{
+    border: 1px solid greenyellow;
+    height: 80px;
+    width: 30px;
+    border-radius: 30px;
+    margin-top: 110px;
+    margin-left: 20px;
+    background-color: greenyellow;
+}
+#legr{
+    border: 1px solid greenyellow;
+    height: 80px;
+    width: 30px;
+    border-radius: 30px;
+    margin-top: -81.5px;
+    margin-left: 95px;
+    background-color: greenyellow;
+}
+body{
+    background-color: rgb(77, 210, 126);
+}
